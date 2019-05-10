@@ -36,6 +36,7 @@ const burgerIngredient = ( props ) => {
     return ingredient;
 };
 
+//Catches errors if the prop types are not strings to fufill our switch statements
 burgerIngredient.propTypes = {
     type: PropTypes.string.isRequired
 };
