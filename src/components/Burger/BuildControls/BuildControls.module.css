@@ -8,3 +8,8 @@
     margin: auto;
     padding: 10px 0;
 }
+
+.BuildControls p {
+    padding: 0 16px;
+    color:white;
+}
