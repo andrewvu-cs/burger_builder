@@ -1,22 +1,22 @@
-.BuildControls{
+.BuildControls {
     width: 100%;
-    background-color: burlywood;
-    display:flex;
+    background-color: #CF8F2E;
+    display: flex;
     flex-flow: column;
     align-items: center;
-    box-shadow: 2px 1px #ccc;
+    box-shadow: 0 2px 1px #ccc;
     margin: auto;
     padding: 10px 0;
 }
-
+/* 
 .BuildControls p {
     padding: 0 16px;
     margin: 0 0;
     color:white;
-}
+} */
 
 .OrderButton {
-    background-color: #dad735;
+    background-color: #DAD735;
     outline: none;
     cursor: pointer;
     border: 1px solid #966909;
