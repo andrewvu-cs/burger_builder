@@ -9,7 +9,8 @@ const withErrorHandler = (WrappedComponent, axios ) => {
             error: null
         }
 
-        componentDidMount () {
+        //ComponentWillMount will no longer be supported soon, can just use constructor
+        componentWillMount () {
             axios.interceptors.request.use(req => {
                 this.setState({error: null});
                 return req;
