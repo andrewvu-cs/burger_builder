@@ -8,12 +8,6 @@
     margin: auto;
     padding: 10px 0;
 }
-/* 
-.BuildControls p {
-    padding: 0 16px;
-    margin: 0 0;
-    color:white;
-} */
 
 .OrderButton {
     background-color: #DAD735;
@@ -30,10 +24,10 @@
 .OrderButton:hover, .OrderButton:active {
     background-color: #A0DB41;
     border: 1px solid #966909;
-    color:#966909;
+    color: #966909;
 }
 
-.OrderButton:disabled{
+.OrderButton:disabled {
     background-color: #C7C6C6;
     cursor: not-allowed;
     border: 1px solid #ccc;
@@ -46,16 +40,12 @@
 
 @keyframes enable {
     0% {
-        transform: scale(1)
-    } 60% {
-        transform: scale(1.1);
-    } 100% {
         transform: scale(1);
     }
-}
-
-@media(min-width: 499px){
-    .BuildControls {
-        /* margin-bottom: 3em; */
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
     }
 }
