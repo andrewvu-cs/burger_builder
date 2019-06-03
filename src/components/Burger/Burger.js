@@ -12,11 +12,13 @@ const burger = (props) => {
             return [...Array(props.ingredients[igKey])].map((_, i) => {
                 // returns the BurgerIngredients with their values, unique key
                 return <BurgerIngredient key={igKey + i} type={igKey} />;
-            });
-        })
+            
+            } );
+        } )
         .reduce((arr, el) => {
             return arr.concat(el)
         }, []);
+    
     
     if (transformedIngredients.length === 0) {
         transformedIngredients = <p>Please start adding ingredients</p>;
