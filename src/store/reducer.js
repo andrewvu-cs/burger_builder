@@ -16,7 +16,7 @@ const reducer =  (state = initialState, action) => {
         case actionTypes.ADD_INGREDIENT:
             return {
                 ...state,
-                // need to make deep copy for immutably
+                // need to make deep copy to be immutable
                 ingredients: {
                     ...state.ingredients,
                     [action.ingredientName]: state.ingredients[action.ingredientName] + 1
@@ -25,7 +25,7 @@ const reducer =  (state = initialState, action) => {
         case actionTypes.REMOVE_INGREDIENT:
             return {
                 ...state,
-                // need to make deep copy for immutably
+                // need to make deep copy to be immutable
                 ingredients: {
                     ...state.ingredients,
                     [action.ingredientName]: state.ingredients[action.ingredientName] - 1
