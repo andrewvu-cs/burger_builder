@@ -10,8 +10,18 @@ import Spinner from '../../components/UI/Spinner/Spinner';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import axios from '../../axios-orders';
 
+<<<<<<< HEAD
 import * as actions from '../../store/actions/index';
 
+=======
+//PRE-REDUX VERSION
+const INGREDIENT_PRICES = {
+    salad: 0.5,
+    cheese: 0.4,
+    meat: 1.3,
+    bacon: 0.7
+}
+>>>>>>> efa0c32a6611894cb902e59ecf0bbcfe2420a502
 
 class BurgerBuilder extends Component {
     // constructor(props){
