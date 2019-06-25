@@ -11,8 +11,6 @@ export{
 } from './order';
 
 export {
-    authFail,
-    authStart,
-    authSuccess,
-    auth
-} from './auth'
+    auth,
+    logout
+} from './auth';
