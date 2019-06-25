@@ -5,7 +5,7 @@ import classes from './Burger.module.css';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 
 const burger = (props) => {
-    console.log(props);
+    // console.log(props);
     //returns us an array of the keys as string of an object
     let transformedIngredients = Object.keys(props.ingredients)
         .map(igKey => {
