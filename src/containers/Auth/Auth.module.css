@@ -9,6 +9,11 @@
 
 }
 
+.Auth p {
+    color: red;
+    font-weight: bold;
+}
+
 @media (min-width: 600px) {
     .Auth
  {
