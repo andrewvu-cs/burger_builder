@@ -9,10 +9,15 @@
 
 }
 
-.Auth p {
-    color: red;
+.Auth1{
+    color: #944317;
     font-weight: bold;
 }
+
+.AuthError{
+    color: red;
+}
+
 
 @media (min-width: 600px) {
     .Auth

@@ -133,7 +133,7 @@ class Auth extends Component {
 
         if (this.props.error) {
             errorMessage = (
-                <p>{this.props.error.message}</p>
+                <p className={classes.AuthError}>{this.props.error.message}</p>
             );
         }
 
@@ -146,13 +146,14 @@ class Auth extends Component {
             <div className={classes.Auth}>
                 {authRedirect}
                 {errorMessage}
+                <p className={classes.Auth1}>{this.state.isSignup ? 'SIGN UP' : 'LOGIN'}</p>
                 <form onSubmit={this.submitHandler}>
                     {form}
                     <Button btnType="Success">SUBMIT</Button>
                 </form>
-                <Button 
+                <Button  
                     clicked={this.switchAuthModeHandler}
-                    btnType="Danger">SWITCH TO {this.state.isSignup ? 'SIGNIN' : 'SIGNUP'}</Button>
+                    btnType="Danger">SWITCH TO {this.state.isSignup ? 'SIGN IN' : 'SIGN UP'}</Button>
             </div>
         );
     }
